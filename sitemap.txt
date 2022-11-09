@@ -1,7 +1,7 @@
-https://rebond.github.io/404/index.html
-https://rebond.github.io/about/index.html
-https://rebond.github.io/tags/index.html
-https://rebond.github.io/categories/index.html
-https://rebond.github.io/2022/11/05/First-Blog/
-https://rebond.github.io/2022/11/05/hello-world/
-https://rebond.github.io/
+https://gitee.com/Rebond/404/index.html
+https://gitee.com/Rebond/about/index.html
+https://gitee.com/Rebond/tags/index.html
+https://gitee.com/Rebond/categories/index.html
+https://gitee.com/Rebond/2022/11/05/First-Blog/
+https://gitee.com/Rebond/2022/11/05/hello-world/
+https://gitee.com/Rebond
