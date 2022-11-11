@@ -43,12 +43,12 @@ SakuraList.prototype.push = function (sakura) {
     this.list.push(sakura);
 }
 SakuraList.prototype.update = function () {
-    for (var i = 0, len = this.list.length; i < len; i++) {
+    for (var i = 0, len = this.list.length; i < 3; i++) {
         this.list[i].update();
     }
 }
 SakuraList.prototype.draw = function (cxt) {
-    for (var i = 0, len = this.list.length; i < len; i++) {
+    for (var i = 0, len = this.list.length; i < 3; i++) {
         this.list[i].draw(cxt);
     }
 }
