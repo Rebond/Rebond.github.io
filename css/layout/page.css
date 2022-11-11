@@ -5,7 +5,7 @@
   height: auto;
 /*背景图片路径*/
 /*background: url("https://gitee.com/Rebond/Image/raw/master/bg.jpg");*/
-  background: url("https://cdn.jsdelivr.net/gh/kaix2301/pictures/img202201072225073.png");
+  background: url("https://cdn.staticaly.com/gh/Rebond/Image@main/bg.1lqvxhcz2x4w.webp");
 /*背景图片不重复多次显示*/
   background-repeat: no-repeat;
 /*窗口放缩时背景图片中心始终在屏幕中心*/
@@ -20,9 +20,9 @@ keep-tablet()
   position: relative;
   box-sizing: border-box;
   padding-top: $header-height;
-/*背景图片路径*/
-  background: url("https://cdn.jsdelivr.net/gh/kaix2301/pictures/img202201072225073.png");
-/*背景图片不重复多次显示*/
+/*背景图片路径*background: url("https://cdn.jsdelivr.net/gh/kaix2301/pictures/img202201072225073.png");/
+	background: url("https://cdn.staticaly.com/gh/Rebond/Image@main/1.3pbck74mvns0.webp");
+	/*背景图片不重复多次显示*/
   background-repeat: no-repeat;
 /*窗口放缩时背景图片中心始终在屏幕中心*/
   background-position: center;
