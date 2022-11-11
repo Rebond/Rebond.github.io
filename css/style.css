@@ -1555,7 +1555,16 @@ pre .javascript .function {
   box-sizing: border-box;
   width: 100%;
   height: auto;
-  background: var(--background-color-1);
+/*背景图片路径*/
+  background: url("https://cdn.jsdelivr.net/gh/kaix2301/pictures/img202201081000420.jpg");
+/*背景图片不重复多次显示*/
+  background-repeat: no-repeat;
+/*窗口放缩时背景图片中心始终在屏幕中心*/
+  background-position: center;
+/*背景图片固定，不滚动*/
+  background-attachment: fixed;
+/*图片大小自适应窗口大小*/
+  background-size: cover;
 }
 @media (max-width: 800px) {
   .page-container {
@@ -1566,6 +1575,16 @@ pre .javascript .function {
   position: relative;
   box-sizing: border-box;
   padding-top: 70px;
+/*背景图片路径*/
+  background: url("https://cdn.jsdelivr.net/gh/kaix2301/pictures/img202201072225073.png");
+/*背景图片不重复多次显示*/
+  background-repeat: no-repeat;
+/*窗口放缩时背景图片中心始终在屏幕中心*/
+  background-position: center;
+/*背景图片固定，不滚动*/
+  background-attachment: fixed;
+/*图片大小自适应窗口大小*/
+  background-size: cover;
 }
 .page-container .page-main-content.is-home .transparent-1 {
   background: var(--header-transparent-background-1);
@@ -1961,7 +1980,7 @@ pre .javascript .function {
   width: 100%;
   height: 100%;
   padding-top: 2px;
-  background: var(--background-color-1);
+  background: rgba(255,255,255,0.9);
   box-shadow: 2px 2px 5px var(--shadow-color);
 }
 .header-wrapper .header-content {
@@ -2507,14 +2526,14 @@ pre .javascript .function {
   padding-top: 2rem;
 }
 .first-screen-container .content .description {
-  color: var(--text-color-3);
+  background: rgba(50,50,50,0.4); /*字体背景颜色和透明的*/
+  padding: 5px 20px; /*字体背景框的大小*/
+  border-radius: 5px; /*圆角*/
   font-weight: bold;
   font-size: 2rem;
   line-height: 1.8;
   text-align: center;
-}
-.first-screen-container .content .description .desc-item {
-  color: var(--text-color-3);
+  color: #e6e6e6; /*字体颜色*/
 }
 @media (max-width: 800px) {
   .first-screen-container .content .description {
@@ -2732,7 +2751,7 @@ pre .javascript .function {
   margin-bottom: 0;
 }
 .home-content-container {
-  background: var(--background-color-1);
+  background: rgba(255,255,255,0);
 }
 .home-content-container .home-article-list .home-article-item {
   position: relative;
@@ -2746,6 +2765,7 @@ pre .javascript .function {
   transition-timing-function: ease, ease, ease, ease, linear;
   transition-duration: 0.2s, 0.2s, 0.2s, 0.2s, 0.2s;
   transition-property: color, background, box-shadow, border-color, transform;
+  background: rgba(255,255,255,0.8); /*白色半透明*/
 }
 @media (max-width: 800px) {
   .home-content-container .home-article-list .home-article-item {
