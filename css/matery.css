@@ -4,6 +4,16 @@
     .container {
         width: 95%;
     }
+	header .brand-logo .logo-img {
+    height: 25px;
+    vertical-align: middle;
+	border-radius: 50%;
+    padding-bottom: 6px;
+	}
+
+	header .brand-logo .logo-span {
+		font-size: 0.5rem;
+	}
 }
 
 /*中等屏幕下(平板类)的样式*/
@@ -11,6 +21,16 @@
     .container {
         width: 90%;
     }
+	header .brand-logo .logo-img {
+    height: 35px;
+    vertical-align: middle;
+	border-radius: 50%;
+    padding-bottom: 6px;
+	}
+
+	header .brand-logo .logo-span {
+		font-size: 0.9rem;
+	}
 }
 
 /*大屏幕下(桌面类)的样式*/
@@ -289,6 +309,7 @@ header nav .brand-span {
     font-size: 1.45rem;
 }
 
+/*logo图片*/
 header .brand-logo .logo-img {
     height: 45px;
     vertical-align: middle;
