@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://gitee.com/Rebond/2022/11/05/First-Blog/</loc>
+    <loc>https://rebond.github.io/2022/11/05/First-Blog/</loc>
     
     <lastmod>2022-11-11</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>https://gitee.com/Rebond/404/index.html</loc>
+    <loc>https://rebond.github.io/404/index.html</loc>
     
     <lastmod>2022-11-05</lastmod>
     
@@ -20,7 +20,7 @@
   </url>
   
   <url>
-    <loc>https://gitee.com/Rebond/about/index.html</loc>
+    <loc>https://rebond.github.io/about/index.html</loc>
     
     <lastmod>2022-11-05</lastmod>
     
@@ -29,7 +29,7 @@
   </url>
   
   <url>
-    <loc>https://gitee.com/Rebond/tags/index.html</loc>
+    <loc>https://rebond.github.io/tags/index.html</loc>
     
     <lastmod>2022-11-05</lastmod>
     
@@ -38,7 +38,7 @@
   </url>
   
   <url>
-    <loc>https://gitee.com/Rebond/categories/index.html</loc>
+    <loc>https://rebond.github.io/categories/index.html</loc>
     
     <lastmod>2022-11-05</lastmod>
     
@@ -47,7 +47,7 @@
   </url>
   
   <url>
-    <loc>https://gitee.com/Rebond/2022/11/05/hello-world/</loc>
+    <loc>https://rebond.github.io/2022/11/05/hello-world/</loc>
     
     <lastmod>2022-11-05</lastmod>
     
@@ -57,8 +57,8 @@
   
 
   <url>
-    <loc>https://gitee.com/Rebond</loc>
-    <lastmod>2022-11-11</lastmod>
+    <loc>https://rebond.github.io/</loc>
+    <lastmod>2022-11-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
