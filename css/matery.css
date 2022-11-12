@@ -292,6 +292,7 @@ header nav .brand-span {
 header .brand-logo .logo-img {
     height: 45px;
     vertical-align: middle;
+	border-radius: 50%;
     padding-bottom: 6px;
 }
 
@@ -551,8 +552,8 @@ header .go-back i {
 }
 
 .bg-cover:after {
-    -webkit-animation: rainbow 60s infinite;
-    animation: rainbow 60s infinite;
+    /*-webkit-animation: rainbow 60s infinite;
+    animation: rainbow 60s infinite;*/
 }
 
 .bg-cover:before,
@@ -574,7 +575,7 @@ header .go-back i {
 }
 
 .bg-cover .title {
-    font-size: 4rem;
+    font-size: 2.4rem;    /*主要标题*/
     line-height: 1.2em;
     margin-bottom: 20px;
     position: relative;
