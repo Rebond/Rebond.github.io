@@ -3,15 +3,21 @@
 @media only screen and (max-width: 601px) {
     .container {
         width: 95%;
-		font-size: 18px;
     }
-	header .brand-logo .logo-img {
-	visibility: hidden;
+	header .brand-logo {
+		display:flex;
+		justify-content:center;
+		align-items:center;
 	}
-
+	header .brand-logo .logo-img {
+		left:40%;
+		height: 45px;
+		vertical-align: middle;
+		border-radius: 50%;
+		padding-bottom: 3px;
+	}
 	header .brand-logo .logo-span {
-		font-size: 0.5rem;
-		margin-left: -45px;
+		visibility:hidden;
 	}
 }
 
