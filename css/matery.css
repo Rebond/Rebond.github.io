@@ -2,7 +2,7 @@
 /*小屏幕下(手机类)的样式*/
 @media screen and (min-width: 220px){
     html {
-        font-size: 35% !important; 
+        font-size: 40% !important; 
     }
 }
 @media screen and (min-width: 320px){
@@ -13,13 +13,13 @@
 
 @media screen and (min-width: 360px){
     html {
-        font-size: 50% !important; 
+        font-size: 55% !important; 
     }
 }
 
 @media screen and (min-width: 375px){
     html {
-        font-size: 55% !important; 
+        font-size: 60% !important; 
     }
 }
 
@@ -31,7 +31,7 @@
 
 @media screen and (min-width: 750px){
     html {
-      font-size: 80% !important; 
+      font-size: 85% !important; 
     }
 }
 
@@ -439,7 +439,7 @@ header .side-nav .social-link {
     padding: 0 35px;
     height: 45px;
     line-height: 45px;
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #fff;
     border: 1px solid #fff;
     background-color: transparent;
