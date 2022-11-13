@@ -1,0 +1,53 @@
+<style>
+    #container{
+        display: flex;
+        width: 100%;
+		flex-wrap: wrap;
+    }
+    #loveTime {
+        color: rgb(255, 0, 0);
+        font-size: 1.3rem;
+    }
+    #meetTime {
+        color: rgb(255, 0, 0);
+        font-size: 1.3rem;
+    }
+    #tianBirthday{
+        color: rgb(255, 0, 0);
+        font-size: 1.3rem;
+    }
+    #nextMeet{
+        color: rgb(255, 0, 0);
+        font-size: 1.3rem;
+    }
+    #time_container1{
+        border: 1px solid rgb(15, 143, 53);
+        width: 60%;
+        margin-left: 20%;
+        height: 100px;
+        border-radius: 5px;
+        margin-bottom: 5%;
+		text-align: center;
+    }
+    .shang{
+        height: 50%;
+		width: 100%;
+		display: flex;  
+  		justify-content: center;
+  		align-items:center;
+    }
+    .xia{
+        height: 50%;
+		width: 100%;
+		display: flex;  
+  		justify-content: center;
+  		align-items:center;
+    }
+	.shang span{
+		color:blue;
+		width: 100%;
+	}
+	.xia span{
+		width: 100%;
+	}
+</style>

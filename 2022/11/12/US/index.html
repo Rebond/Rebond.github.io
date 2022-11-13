@@ -357,7 +357,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    89
+                    340
                 </div>
                 
 
@@ -379,11 +379,33 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p><span id="runtime_span">小黄和甜甜相爱吖</span></p>
+                <link rel="stylesheet" type="text/css" href="./us.css">
+
+
+<div id="container">
+    <div id="time_container1">
+        <div class="shang"><span>小黄和甜甜相遇已经</span></div>
+        <div class="xia" id="meetTime"><span>相遇</span></div>
+    </div>
+    <div id="time_container1">
+        <div class="shang"><span>小黄和甜甜相爱已经</span></div>
+        <div class="xia" id="loveTime"><span>相爱</span></div>
+    </div>
+    <div id="time_container1">
+        <div class="shang"><span>距离甜甜的下一个生日还剩</span></div>
+        <div class="xia" id="tianBirthday"><span>甜甜生日</span></div>
+    </div>
+    <div id="time_container1">
+        <div class="shang"><span>小黄与甜甜第一次见面大约还有</span></div>
+        <div class="xia" id="nextMeet"><span>见面</span></div>
+    </div>
+    </div>
+</div>
+
 <script type="text/javascript">
-    function show_runtime(){
-    window.setTimeout("show_runtime()",1000);
-    X=new Date("11/12/2022 1:03:00");
+    function show_meetTime(){
+    window.setTimeout("show_meetTime()",1000);
+    X=new Date("10/18/2022 17:20:00");
     Y=new Date();
     T=(Y.getTime()-X.getTime());
     M=24*60*60*1000;
@@ -391,13 +413,48 @@
     B=Math.floor(b);c=(b-B)*60;
     C=Math.floor((b-B)*60);
     D=Math.floor((c-C)*60);
-    runtime_span.innerHTML="小黄和甜甜相爱已经: "+A+" 天 "+B+" 小时 "+C+" 分 "+D+" 秒了~"}
-    show_runtime();
+    meetTime.innerHTML=A+" 天 "+B+" 小时 "+C+" 分 "+D+" 秒了"}
+    show_meetTime();
+
+    function show_loveTime(){
+    window.setTimeout("show_loveTime()",1000);
+    X=new Date("11/12/2022 1:03:41");
+    Y=new Date();
+    T=(Y.getTime()-X.getTime());
+    M=24*60*60*1000;
+    a=T/M;A=Math.floor(a);b=(a-A)*24;
+    B=Math.floor(b);c=(b-B)*60;
+    C=Math.floor((b-B)*60);
+    D=Math.floor((c-C)*60);
+    loveTime.innerHTML=A+" 天 "+B+" 小时 "+C+" 分 "+D+" 秒了~"}
+    show_loveTime();
+
+    function show_tianBirthday(){
+    window.setTimeout("show_tianBirthday()",1000);
+    Y=new Date("7/25/2023 00:00:00");
+    X=new Date();
+    T=(Y.getTime()-X.getTime());
+    M=24*60*60*1000;
+    a=T/M;A=Math.floor(a);b=(a-A)*24;
+    B=Math.floor(b);c=(b-B)*60;
+    C=Math.floor((b-B)*60);
+    D=Math.floor((c-C)*60);
+    tianBirthday.innerHTML=A+" 天 "+B+" 小时 "+C+" 分 "+D+" 秒"}
+    show_tianBirthday();
+
+    function show_nextMeet(){
+    window.setTimeout("show_nextMeet()",1000);
+    Y=new Date("1/7/2023 17:20:21");
+    X=new Date();
+    T=(Y.getTime()-X.getTime());
+    M=24*60*60*1000;
+    a=T/M;A=Math.floor(a);b=(a-A)*24;
+    B=Math.floor(b);c=(b-B)*60;
+    C=Math.floor((b-B)*60);
+    D=Math.floor((c-C)*60);
+    nextMeet.innerHTML=A+" 天 "+B+" 小时 "+C+" 分 "+D+" 秒"}
+    show_nextMeet();
 </script>
-
-
-
-
                 
             </div>
             <hr/>
@@ -824,7 +881,7 @@
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">788</span>
+                        class="white-color">1k</span>
             
             
             
