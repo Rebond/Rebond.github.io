@@ -300,9 +300,10 @@ mark {
 }
 
 .bg-color {
-    background-color: #535253;
+    /* background-color: #535253; */
     /* opacity:0.53; */
-    /* background-image: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%); */
+    /* background-image: linear-gradient(to bottom, #363690 0%, #2FD7F9 100%); */
+    background-image: linear-gradient(to bottom, #5050b4 0%, #2FD7F9 100%);
 }
 
 .text-color {
@@ -441,7 +442,7 @@ header .side-nav .social-link {
     padding: 0 35px;
     height: 45px;
     line-height: 45px;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     color: #fff;
     border: 1px solid #fff;
     background-color: transparent;
@@ -632,6 +633,7 @@ header .go-back i {
 
 .bg-cover .container {
     position: relative;
+    width: 100%;
     color: #fff;
     z-index: 2;
 }
