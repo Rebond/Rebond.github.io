@@ -425,11 +425,11 @@
                 <span id="year">2022</span>
             
             <a href="/Rebond/about" target="_blank">Rebond</a>
-            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            <!-- |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a> -->
             |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
-            <br>
             
-                &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+            
+                |&nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
                         class="white-color">964</span>
             
             
@@ -703,6 +703,16 @@ $(function () {
 
     
     <script src="/Rebond/libs/instantpage/instantpage.js" type="module"></script>
+    
+    <!-- 冒泡 -->
+    
+        <script type="text/javascript">
+            // 只在桌面版网页启用特效
+            var windowWidth = $(window).width();
+            document.write(
+                '<script type="text/javascript" src="/Rebond/libs/others/buble.js"><\/script>'
+            );
+        </script>
     
 
 </body>
