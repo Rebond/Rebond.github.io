@@ -1,1 +1,10 @@
 /* Here is your custom css styles. */
+@font-face{
+    font-family: 'MiSans-Light';
+    src: url('../font/MiSans-Light.ttf');
+}
+
+body{
+    font-family: 'MiSans-Light';
+
+}

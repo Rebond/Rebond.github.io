@@ -1,5 +1,8 @@
 <!DOCTYPE HTML>
+<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+
 <html lang="zh-CN">
+<link rel="stylesheet" type="text/css" href="/Rebond/css/loading.css">
 
 
 <head>
@@ -38,9 +41,7 @@
 
 
 
-    <link rel="stylesheet" href="/Rebond/libs/tocbot/tocbot.css">
     <link rel="stylesheet" href="/Rebond/css/post.css">
-
 
 
 
@@ -54,6 +55,29 @@
 
 
 <body>
+    
+    <div id="loading-box">
+      <div class="loading-left-bg"></div>
+      <div class="loading-right-bg"></div>
+      <div class="spinner-box">
+        <div class="configure-border-1">
+          <div class="configure-core"></div>
+        </div>
+        <div class="configure-border-2">
+          <div class="configure-core"></div>
+        </div>
+        <div class="loading-word">加载中...</div>
+      </div>
+    </div>
+    <!-- 页面加载动画 -->
+    <script>
+      $(document).ready(function () {
+        document.body.style.overflow = 'auto';
+        document.getElementById('loading-box').classList.add("loaded")
+      })
+    </script>
+  
+
     <header class="navbar-fixed">
     <nav id="headNav" class="bg-color nav-transparent">
         <div id="navContainer" class="nav-wrapper container">
@@ -74,9 +98,9 @@
     
     <a href="/Rebond/" class="waves-effect waves-light">
       
-      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      <i class="fas fa-paper-plane-o" style="zoom: 0.6;"></i>
       
-      <span>Home</span>
+      <span>Index</span>
     </a>
     
   </li>
@@ -87,7 +111,7 @@
       
       <i class="fas fa-tags" style="zoom: 0.6;"></i>
       
-      <span>Tag</span>
+      <span>Tags</span>
     </a>
     
   </li>
@@ -96,9 +120,9 @@
     
     <a href="/Rebond/categories" class="waves-effect waves-light">
       
-      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      <i class="fas fa-book" style="zoom: 0.6;"></i>
       
-      <span>Categorie</span>
+      <span>Categories</span>
     </a>
     
   </li>
@@ -107,9 +131,9 @@
     
     <a href="/Rebond/archives" class="waves-effect waves-light">
       
-      <i class="fas fa-list" style="zoom: 0.6;"></i>
+      <i class="fas fa-calendar-check-o" style="zoom: 0.6;"></i>
       
-      <span>Timely</span>
+      <span>Archives</span>
     </a>
     
   </li>
@@ -158,9 +182,9 @@
 	  
 		<a href="/Rebond/" class="waves-effect waves-light">
 			
-			    <i class="fa-fw fas fa-home"></i>
+			    <i class="fa-fw fas fa-paper-plane-o"></i>
 			
-			Home
+			Index
 		</a>
           
         </li>
@@ -171,7 +195,7 @@
 			
 			    <i class="fa-fw fas fa-tags"></i>
 			
-			Tag
+			Tags
 		</a>
           
         </li>
@@ -180,9 +204,9 @@
 	  
 		<a href="/Rebond/categories" class="waves-effect waves-light">
 			
-			    <i class="fa-fw fas fa-bookmark"></i>
+			    <i class="fa-fw fas fa-book"></i>
 			
-			Categorie
+			Categories
 		</a>
           
         </li>
@@ -191,9 +215,9 @@
 	  
 		<a href="/Rebond/archives" class="waves-effect waves-light">
 			
-			    <i class="fa-fw fas fa-list"></i>
+			    <i class="fa-fw fas fa-calendar-check-o"></i>
 			
-			Timely
+			Archives
 		</a>
           
         </li>
@@ -225,7 +249,7 @@
 <script src="/Rebond/libs/cryptojs/crypto-js.min.js"></script>
 <script>
     (function() {
-        let pwd = '3777e930574793fbd39c81ed37a2e1a3012847bb50c12e693a815b111f08b46a';
+        let pwd = '';
         if (pwd && pwd.length > 0) {
             if (pwd !== CryptoJS.SHA256(prompt('甜甜专属，Type the Password~')).toString(CryptoJS.enc.Hex)) {
                 alert('甜甜你咋忘记密码了，再来一次奥~');
@@ -253,12 +277,10 @@
 
 
 
-<main class="post-container content">
+<main class="container content">
 
     
-    <div class="row">
-    <div id="main-content" class="col s12 m12 l9">
-        <!-- 文章内容详情 -->
+    <!-- 文章内容详情 -->
 <div id="artDetail">
     <div class="card">
         <div class="card-content article-info">
@@ -314,8 +336,8 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <link rel="stylesheet" type="text/css" href="./us.css">
-
+                <link rel="stylesheet" type="text/css" href="../US/us.css">
+<script type="text/javascript" src="../US/us.js"></script>
 
 <div id="container">
     <div id="time_container1">
@@ -338,6 +360,7 @@
 </div>
 
 <script type="text/javascript">
+
     function show_meetTime(){
     window.setTimeout("show_meetTime()",1000);
     X=new Date("10/18/2022 17:20:00");
@@ -389,7 +412,11 @@
     D=Math.floor((c-C)*60);
     nextMeet.innerHTML=A+" 天 "+B+" 小时 "+C+" 分 "+D+" 秒"}
     show_nextMeet();
+
 </script>
+
+
+
                 
             </div>
             <hr/>
@@ -625,94 +652,13 @@
 
 
 
-    </div>
-    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
-        <div class="toc-widget card" style="background-color: white;">
-            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
-            <div id="toc-content"></div>
-        </div>
-    </div>
-</div>
-
-<!-- TOC 悬浮按钮. -->
-
-<div id="floating-toc-btn" class="hide-on-med-and-down">
-    <a class="btn-floating btn-large bg-color">
-        <i class="fas fa-list-ul"></i>
-    </a>
-</div>
-
-
-<script src="/Rebond/libs/tocbot/tocbot.min.js"></script>
-<script>
-    $(function () {
-        tocbot.init({
-            tocSelector: '#toc-content',
-            contentSelector: '#articleContent',
-            headingsOffset: -($(window).height() * 0.4 - 45),
-            collapseDepth: Number('0'),
-            headingSelector: 'h2, h3, h4'
-        });
-
-        // Set scroll toc fixed.
-        let tocHeight = parseInt($(window).height() * 0.4 - 64);
-        let $tocWidget = $('.toc-widget');
-        $(window).scroll(function () {
-            let scroll = $(window).scrollTop();
-            /* add post toc fixed. */
-            if (scroll > tocHeight) {
-                $tocWidget.addClass('toc-fixed');
-            } else {
-                $tocWidget.removeClass('toc-fixed');
-            }
-        });
-
-        
-        /* 修复文章卡片 div 的宽度. */
-        let fixPostCardWidth = function (srcId, targetId) {
-            let srcDiv = $('#' + srcId);
-            if (srcDiv.length === 0) {
-                return;
-            }
-
-            let w = srcDiv.width();
-            if (w >= 450) {
-                w = w + 21;
-            } else if (w >= 350 && w < 450) {
-                w = w + 18;
-            } else if (w >= 300 && w < 350) {
-                w = w + 16;
-            } else {
-                w = w + 14;
-            }
-            $('#' + targetId).width(w);
-        };
-
-        // 切换TOC目录展开收缩的相关操作.
-        const expandedClass = 'expanded';
-        let $tocAside = $('#toc-aside');
-        let $mainContent = $('#main-content');
-        $('#floating-toc-btn .btn-floating').click(function () {
-            if ($tocAside.hasClass(expandedClass)) {
-                $tocAside.removeClass(expandedClass).hide();
-                $mainContent.removeClass('l9');
-            } else {
-                $tocAside.addClass(expandedClass).show();
-                $mainContent.addClass('l9');
-            }
-            fixPostCardWidth('artDetail', 'prenext-posts');
-        });
-        
-    });
-</script>
-
     
 
 </main>
 
 
 
-
+    
     <footer class="page-footer bg-color">
     
         <link rel="stylesheet" href="/Rebond/libs/aplayer/APlayer.min.css">
@@ -770,8 +716,8 @@
 
     
 
-    <div class="container row center-align"
-         style="margin-bottom: 15px !important;">
+    <div class="container row center-align">
+         <!-- style="margin-bottom: 15px !important;"> -->
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             
@@ -780,15 +726,16 @@
             <a href="/Rebond/about" target="_blank">Rebond</a>
             <!-- |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a> -->
             |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            &nbsp;|&nbsp;
             
-            
-                |&nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                <i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
                         class="white-color">964</span>
             
             
             
             
             
+            <br>
             <!-- 运行天数提醒. -->
             
                 <span id="sitetime"> Loading ...</span>
@@ -839,7 +786,7 @@
                             document.getElementById("year").innerHTML = todayYear;
                             var daysTip = 'This site has been running for ' + diffDays + ' days';
                             if (language === 'zh-CN') {
-                                daysTip = '| 小破站在各种灾难中已经苟活 ' + diffDays + ' 天 ' +diffHours + ' 小时 ' + diffMinutes + ' 分钟 ' + diffSeconds + ' 秒';        
+                                daysTip = '小破站在各种灾难中已经苟活 ' + diffDays + ' 天 ' +diffHours + ' 小时 ' + diffMinutes + ' 分钟 ' + diffSeconds + ' 秒';        
                             } else if (language === 'zh-HK') {
                                 daysTip = '本站已運行 ' + diffDays + ' 天';
                             }
@@ -863,7 +810,37 @@
             <br>
             
         </div>
-        <div class="col s12 m4 l4 social-link ">
+        <div class="col s12 m4 l4 social-link "><link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+
+
+    <a href="https://github.com/Rebond" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github" aria-hidden="true"></i>
+        <!-- <i class="fas fa-code-branch" aria-hidden="true"></i> -->
+    </a>
+
+
+
+    <a href="https://gitee.com/Rebond" class="tooltipped" target="_blank" data-tooltip="访问我的Gitee" data-position="top" data-delay="50">
+        <i class="fa fa-git" aria-hidden="true"></i>
+    </a>
+
+
+
+    <a href="https://blog.csdn.net/qq_44157281" class="tooltipped" target="_blank" data-tooltip="访问我的CSDN" data-position="top" data-delay="50">
+        <i class="fa fa-share-alt" aria-hidden="true"></i>
+    </a>
+
+
+
+    <a href="https://www.zhihu.com/people/rebond-55" class="tooltipped" target="_blank" data-tooltip="访问我的知乎" data-position="top" data-delay="50">
+        <i class="fab fa-zhihu" aria-hidden="true"></i>
+    </a>
+
+
+    <a href="mailto:951261248@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+    </a>
+
 
 
 

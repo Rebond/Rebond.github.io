@@ -1,5 +1,10 @@
 /*全局基础样式*/
 /*小屏幕下(手机类)的样式*/
+@media screen and (min-width: 120px){
+    html {
+        font-size: 20% !important; 
+    }
+}
 @media screen and (min-width: 220px){
     html {
         font-size: 40% !important; 
@@ -33,12 +38,14 @@
     html {
       font-size: 85% !important; 
     }
+
 }
 
 @media screen and (min-width: 1024px){
     html {
         font-size: 95% !important;
     }
+
 }
 
 @media only screen and (max-width: 601px) {
@@ -54,6 +61,9 @@
 	header .brand-logo .logo-span {
 		font-size:0.6rem;
 	}
+    #searchIcon {
+        font-size: 2.0rem !important;
+    }
 }
 
 /*中等屏幕下(平板类)的样式*/
@@ -70,6 +80,9 @@
 	header .brand-logo .logo-span {
 		font-size:0.8rem;
 	}
+    #searchIcon {
+        font-size: 2.0rem !important;
+    }
 }
 
 /*大屏幕下(桌面类)的样式*/
@@ -86,7 +99,7 @@
     }
 
     .post-container {
-        width: 90%;
+        width: 90% !important;
         margin: 0 auto;
         max-width: 1250px;
     }
@@ -95,7 +108,9 @@
 body {
     background-color: #eaeaea;
     margin: 0;
-    color: #34495e;
+    /* color: #000; */
+    /* color: #34495e; */
+    color: #2c3033;
     overflow-x: hidden;
     overflow-y: auto;
 }
@@ -302,8 +317,8 @@ mark {
 .bg-color {
     /* background-color: #5f5f5f; */
     /* opacity:0.53; */
-    background-image: linear-gradient(to bottom, #363690 0%, #2FD7F9 100%);
-    /* background-image: linear-gradient(to bottom, #2E4051 0%, #AFB7BF 100%); */
+    /* background-image: linear-gradient(to bottom, #363690 0%, #2FD7F9 100%); */
+    background-image: linear-gradient(to right,  #3B4B5C 0%,#AEB6BD 100%);
     /* background-image: linear-gradient(to right, #A8BFE9 0%, #6896E8 100%); */
 }
 
@@ -339,7 +354,33 @@ header .side-nav {
 }
 
 nav {
+    font-style: italic;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 7px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.nav-menu a:hover{
+    font-weight: bold;
+    
+}
+
+.nav-menu li a::before,
+.nav-menu li a:visited::before{ 
+    content: ""; 
+    position: absolute; 
+    width: 100%; 
+    height: 2px; 
+    bottom: 0; 
+    left: 0; 
+    background-color: #AB7ABC; 
+    visibility: hidden; 
+    transform: scaleX(0); 
+    transition: all 0.3s ease-in-out 0s; 
+}
+ 
+.nav-menu li a:hover::before,
+.nav-menu li a:visited:hover::before{ 
+    visibility: visible;
+    transform: scaleX(1);
 }
 
 header .nav-transparent {
@@ -348,6 +389,7 @@ header .nav-transparent {
     box-shadow: none;
 }
 
+/* Sweetree */
 header nav .brand-span {
     font-size: 1.45rem;
 }
@@ -369,8 +411,9 @@ header .brand-logo .waves-effect {
     vertical-align: top;
 }
 
+/* 小屏幕菜单 */
 header .button-collapse i {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
 }
 
 header .side-nav .mobile-head {
@@ -443,7 +486,7 @@ header .side-nav .social-link {
     padding: 0 35px;
     height: 45px;
     line-height: 45px;
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: #fff;
     border: 1px solid #fff;
     background-color: transparent;
@@ -639,11 +682,13 @@ header .go-back i {
     z-index: 2;
 }
 
+/*主要标题*/
 .bg-cover .title {
-    font-size: 2.4rem;    /*主要标题*/
+    font-size: 2.4rem;    
     line-height: 1.2em;
     margin-bottom: 20px;
     position: relative;
+    font-weight: bold;
 }
 
 .bg-cover .description {
@@ -657,6 +702,7 @@ header .go-back i {
     margin: 0 auto;
     font-size: 2.5rem;
     font-weight: 400;
+    
 }
 
 @-webkit-keyframes rainbow {
@@ -770,6 +816,7 @@ header .go-back i {
 .video-player .title {
     margin-bottom: 20px;
     font-size: 2rem;
+    /* color: #000; */
     font-weight: 700;
 }
 
@@ -941,8 +988,8 @@ article a {
 
 article a:hover {
     font-weight: bold;
-    color: #42b983;
-    text-decoration: underline;
+    color: blue;
+    /* text-decoration: underline; */
 }
 
 .articles .row {
@@ -1900,6 +1947,10 @@ footer {
     /* background: rgb(255, 255, 255); */
 }
 
+.page-footer{
+    padding-top: 0;
+}
+
 footer .social-statis {
     margin-top: 10px;
     position: relative;
@@ -1907,6 +1958,7 @@ footer .social-statis {
 
 footer a {
     color: #fff;
+    font-style: italic;
 }
 
 footer .copy-right {
@@ -1915,7 +1967,7 @@ footer .copy-right {
 
 /*搜索层样式*/
 #searchIcon {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 
 #searchModal {
@@ -2110,6 +2162,7 @@ p.search-result-summary{
 .nav-menu li .sub-nav li {
     text-align: center;
     clear: left;
+    background: #000;
     width: 140px;
     height: 35px;
     line-height: 35px;
