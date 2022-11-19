@@ -5,7 +5,7 @@
     <url>/Rebond/2022/11/12/US/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="../US/us.css">
 <script type="text/javascript" src="../US/us.js"></script>
-
+password: 3777e930574793fbd39c81ed37a2e1a3012847bb50c12e693a815b111f08b46a
 <div id="container">
     <div id="time_container1">
         <div class="shang"><span>小黄和甜甜相遇已经</span></div>
@@ -79,7 +79,6 @@
     D=Math.floor((c-C)*60);
     nextMeet.innerHTML=A+" 天 "+B+" 小时 "+C+" 分 "+D+" 秒"}
     show_nextMeet();
-
 </script>
 
 

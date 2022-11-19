@@ -1,7 +1,7 @@
 /* Here is your custom css styles. */
 @font-face{
     font-family: 'MiSans-Light';
-    src: url('../font/MiSans-Light.ttf');
+    src: url('../font/MiSans-Regular.ttf');
 }
 
 body{

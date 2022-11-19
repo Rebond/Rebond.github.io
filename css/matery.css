@@ -2151,21 +2151,23 @@ p.search-result-summary{
 
 /*二级菜单*/
 
-.nav-menu {
+.nav-menu {    
+    
 }
 
 .nav-menu li .sub-nav {
     position: absolute;
     top: 66px;
     list-style: none;
-    margin-left: -20px;
+    /* margin-left: 40px; */
     display: none;
+
 }
 
 .nav-menu li .sub-nav li {
     text-align: center;
     clear: left;
-    background: #000;
+    background: rgb(180, 180, 180);
     width: 140px;
     height: 35px;
     line-height: 35px;
@@ -2179,14 +2181,17 @@ p.search-result-summary{
     padding: 0;
     display: inline-block;
     border-radius: 5px;
-    color: #000;
+    color: #ffffff;
 }
 
+.nav-menu li .sub-nav li a:hover {
+    color: #ff4800;
+}
 .nav-show i[aria-hidden=true] {
     -webkit-transform: rotate(180deg) !important;
     -moz-transform: rotate(180deg) !important;
     -o-transform: rotate(180deg) !important;
-    -ms-transform: rotate(180deg) !important;
+    -ms-trargb(255, 0, 0) rotate(180deg) !important;
     transform: rotate(180deg) !important;
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
