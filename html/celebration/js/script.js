@@ -39,7 +39,7 @@ $(function()
 	}
 	if($.isFunction($.fn.countup))
 	{
-		$('.saTime[data-date]').countdown(
+		$('.loveTime[data-date]').countdown(
 		{
 			date: $(this).data('date'),
 			render: function(data)
@@ -57,7 +57,7 @@ $(function()
 	}
 	if($.isFunction($.fn.countdown))
 	{
-		$('.zengBirthday[data-date]').countdown(
+		$('.wuBirthday[data-date]').countdown(
 		{
 			date: $(this).data('date'),
 			render: function(data)
